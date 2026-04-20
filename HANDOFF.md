@@ -44,12 +44,12 @@ Kaku（写代码）· Waza（练习惯）· **Kami（出文档）** 三部曲之
 
 改动前值得回看的高风险点：
 
-1. **Tag 双层矩形**——rgba 半透明触发。必须实色 hex
-2. **薄 border + 圆角双圈**——border < 1pt + border-radius 触发
-3. **简历 2 页溢出**——字体 fallback / line-height / 字号动一点都会爆
-4. **break-inside 在 flex 失效**——要包一层 block wrapper
-5. **height: 100vh 在 @page 不准**——改用 mm 明确值
-6. **SVG marker `orient="auto"` 不生效**——WeasyPrint 不旋转 marker，手绘 chevron path
+1. **Tag 双层矩形**--rgba 半透明触发。必须实色 hex
+2. **薄 border + 圆角双圈**--border < 1pt + border-radius 触发
+3. **简历 2 页溢出**--字体 fallback / line-height / 字号动一点都会爆
+4. **break-inside 在 flex 失效**--要包一层 block wrapper
+5. **height: 100vh 在 @page 不准**--改用 mm 明确值
+6. **SVG marker `orient="auto"` 不生效**--WeasyPrint 不旋转 marker，手绘 chevron path
 
 ## 改动的标准姿势
 
@@ -98,7 +98,7 @@ zip -rq kami.zip kami/ -x '*/.*'   # 忽略 .DS_Store 等
 
 ## 待办 / V2 候选
 
-1. **打磨现有模板的边缘情况**（最高优先级）——portfolio 的图片占位 -> 真实 `<img>`；resume 在 Noto Serif fallback 下的 2 页严格性
+1. **打磨现有模板的边缘情况**（最高优先级）--portfolio 的图片占位 -> 真实 `<img>`；resume 在 Noto Serif fallback 下的 2 页严格性
 2. **slides.py 补图文混排 + 数据图表版式**（两个高频场景缺口）
 3. **新模板候选**：学术论文 / 证书 / 菜单 / 邀请函
 4. **scripts/inspect.py** 视觉回归（对比修改前后的 PDF 渲染像素）

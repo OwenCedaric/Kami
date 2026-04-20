@@ -1,15 +1,15 @@
 ---
 name: kami
-description: 'Typeset any professional document — resumes, one-pagers, white papers, letters, portfolios, slide decks — in a warm parchment design system with ink-blue accent, serif-led hierarchy, and tight editorial spacing. Full bilingual support: Chinese docs use TsangerJinKai02 + Source Han, English docs use Newsreader + Inter (Silicon Valley editorial stack). Triggers on "做 PDF / 排版 / 生成报告 / 一页纸 / 白皮书 / 作品集 / 正式信件 / 简历 / PPT / slides / 高质量文档 / 好看的排版", or "build me a resume / make a one-pager / design a slide deck / turn this into a PDF / make this presentable / polish typography", and when raw content is handed over to be "typeset, designed, made presentable".'
+description: 'Typeset any professional document: resumes, one-pagers, white papers, letters, portfolios, slide decks. Warm parchment design system with ink-blue accent, serif-led hierarchy, and tight editorial spacing. Full bilingual support: Chinese docs use TsangerJinKai02 + Source Han, English docs use Newsreader + Inter. Triggers on "做 PDF / 排版 / 生成报告 / 一页纸 / 白皮书 / 作品集 / 正式信件 / 简历 / PPT / slides / 高质量文档 / 好看的排版", or "build me a resume / make a one-pager / design a slide deck / turn this into a PDF / make this presentable / polish typography", and when raw content is handed over to be "typeset, designed, made presentable".'
 ---
 
 # kami · 紙
 
-**紙 · かみ** — the paper your deliverables land on.
+**紙 · かみ** - the paper your deliverables land on.
 
 One design language across six document types: warm parchment canvas, ink-blue accent, serif-led hierarchy, tight editorial rhythm. Inspired by Anthropic's product visuals.
 
-Part of `Kaku · Waza · Kami` — Kaku writes code, Waza drills habits, **Kami delivers documents**.
+Part of `Kaku · Waza · Kami` - Kaku writes code, Waza drills habits, **Kami delivers documents**.
 
 ## Step 1 · Decide the language
 
@@ -45,7 +45,7 @@ When the user asks for **a diagram inside** a long-doc / portfolio / slide (not 
 | "流程图 / flowchart / 决策流 / branching logic" | Flowchart | `assets/diagrams/flowchart.html` |
 | "象限图 / quadrant / 优先级矩阵 / 2×2 matrix" | Quadrant | `assets/diagrams/quadrant.html` |
 
-Read `references/diagrams.md` / `diagrams.en.md` before drawing — it has the selection guide, kami token map, and the AI-slop anti-pattern table. Extract the `<svg>` block from the template and drop it into a `<figure>` inside long-doc / portfolio.
+Read `references/diagrams.md` / `diagrams.en.md` before drawing - it has the selection guide, kami token map, and the AI-slop anti-pattern table. Extract the `<svg>` block from the template and drop it into a `<figure>` inside long-doc / portfolio.
 
 Before drawing, always ask: **would a well-written paragraph teach the reader less than this diagram?** If no, don't draw.
 
@@ -57,7 +57,7 @@ When the user hands over **raw material** (meeting notes, brain dump, existing d
 
 1. **Extract**: pull out every factual claim, number, date, name, and action item
 2. **Classify**: map each extract to the target template's sections (see `references/writing.md` for section structure per doc type)
-3. **Gap-check**: list what the template needs but the raw content doesn't have — present as a compact table
+3. **Gap-check**: list what the template needs but the raw content doesn't have - present as a compact table
 4. **Ask once**: share the gap table with the user. Do not guess to fill gaps.
 
 Example gap-check:
@@ -115,7 +115,7 @@ Visual anomalies (tag double rectangle, font fallback, page break issues) -> `pr
 
 **English**
 - Main serif: Newsreader (Google Fonts, open source, Silicon Valley editorial feel)
-- Main sans: Inter (open source, Silicon Valley default — Linear, Vercel, Notion adjacent)
+- Main sans: Inter (open source, Silicon Valley default - Linear, Vercel, Notion adjacent)
 - Fallback: Charter (macOS) / Georgia (cross-platform), Helvetica Neue / system-ui
 
 Font files next to HTML and `@font-face` relative paths is the most stable setup.
@@ -142,7 +142,7 @@ Never say "I'll adjust the spacing" without naming the exact property and its ne
 
 ## When not to use this skill
 
-- User explicitly wants Material / Fluent / Tailwind default — different design language
+- User explicitly wants Material / Fluent / Tailwind default - different design language
 - Need dark / cyberpunk / futurist aesthetic (this is deliberately anti-future)
 - Need saturated multi-color (this has one accent)
 - Need cartoon / animation / illustration style (this is editorial)

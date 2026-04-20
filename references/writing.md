@@ -184,9 +184,9 @@
 
 ## 几个写作资源（可选参考）
 
-- **Paul Graham 的文章**：短、直接、判断性 —— 散文式写作的黄金标准
-- **Stripe Press 的书**：印刷品级排版搭配深度内容 —— 标题句的写法
-- **麦肯锡 pyramid principle**：金字塔结构，"先结论再论据" —— one-pager 和 executive summary 的写法
-- **Ben Horowitz 的 blog**：如何把技术和生意的判断写得人人能读 —— long doc 的范例
+- **Paul Graham 的文章**：短、直接、判断性 -- 散文式写作的黄金标准
+- **Stripe Press 的书**：印刷品级排版搭配深度内容 -- 标题句的写法
+- **麦肯锡 pyramid principle**：金字塔结构，"先结论再论据" -- one-pager 和 executive summary 的写法
+- **Ben Horowitz 的 blog**：如何把技术和生意的判断写得人人能读 -- long doc 的范例
 
 这些都不是必须读，但读一本会让判断力和写作感上一个档。

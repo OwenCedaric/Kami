@@ -67,7 +67,7 @@ Extract **only the `<svg>...</svg>` block** from the template (leave the frame /
 Edit the `<text>` and `<rect>` values directly. Rules:
 
 - **All coordinates, widths, and gaps must be divisible by 4.** This is the anti-AI-slop floor. Break it once and the diagram starts looking "close enough".
-- Node widths: 128 / 144 / 160 (three tiers, don't add more). Small diagrams (viewBox width < 360) may compress to 2 tiers, but still keep it 2 — don't tailor each node.
+- Node widths: 128 / 144 / 160 (three tiers, don't add more). Small diagrams (viewBox width < 360) may compress to 2 tiers, but still keep it 2 - don't tailor each node.
 - Node heights: 32 (pill) / 64 (standard)
 - Font sizes: 7 (small mono label) / 9 (sublabel mono) / 12 (name sans)
 - **Arrow endpoints land exactly on node edges**: start `(box.x + box.w, box.y + box.h/2)`, end `(box.x, box.y + box.h/2)`, not "close enough". A 10px gap is visible to the eye.
@@ -121,7 +121,7 @@ Scan for these when drawing or reviewing:
 | Ink Blue on every "important" node | Focal rule is 1-2, not a signaling system |
 | Emoji icons 🚀 📊 💡 | Disaster |
 | Gradient backgrounds | kami forbids them |
-| Focal color contradicts the caption's claim | Caption says "Simple **core**", but the ACT node is painted ink-blue — two focals competing. Focal color must match the word emphasized (`<span class="hl">`) in the caption |
+| Focal color contradicts the caption's claim | Caption says "Simple **core**", but the ACT node is painted ink-blue - two focals competing. Focal color must match the word emphasized (`<span class="hl">`) in the caption |
 | Cycle diagram with a dashed ring AND four directed arcs | Same loop drawn twice; reader thinks there are two flows |
 | SVG text clipped at the viewBox top | `text` y is the baseline; cap letters extend above y=0. Pad the top by font-size × 1.2 or adjust the viewBox |
 | 5-10px gap between arrow endpoint and node edge | Reads as "arrow floating in space". Anchor endpoints to exact `box.x / box.x+w / box.y / box.y+h` |

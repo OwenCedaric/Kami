@@ -154,11 +154,11 @@ English stack on PowerPoint:
 
 1. **Cover**: parchment background, centered display title + brand-colored short line + subtitle / author / date
 2. **Contents**: parchment, left-aligned `01  Chapter title` (number serif brand-colored)
-3. **Chapter divider**: full brand ink-blue background, centered white title — the **only** fully chromatic slide in the deck
+3. **Chapter divider**: full brand ink-blue background, centered white title - the **only** fully chromatic slide in the deck
 4. **Content slide**: eyebrow (sans stone) + core claim (serif near-black) + brand line + body (sans dark-warm)
 5. **Data slide**: top takeaway + 2-4 metric cards (big number serif brand + small label sans olive)
 6. **Comparison**: two columns with a 0.5pt warm-gray divider
-7. **Quote**: parchment, minimal, centered serif quote + `— Source`
+7. **Quote**: parchment, minimal, centered serif quote + `- Source`
 8. **Closing**: parchment, centered "Thank you / Q&A / Contact"
 
 ### Script skeleton
@@ -192,10 +192,10 @@ def blank_slide():
 
 ### PPT notes
 
-1. **One idea per slide** — if it runs over three lines, split it
-2. **No default PowerPoint template** — it's cool-blue-gray, clashes with parchment
+1. **One idea per slide** - if it runs over three lines, split it
+2. **No default PowerPoint template** - it's cool-blue-gray, clashes with parchment
 3. **Animations**: don't. Parchment is a print aesthetic, not a SaaS demo. At most `fade`
-4. **Export to PDF** for sharing — cross-machine consistency is better than .pptx
+4. **Export to PDF** for sharing - cross-machine consistency is better than .pptx
    - macOS: Keynote -> Export to PDF
    - Linux: `libreoffice --headless --convert-to pdf output.pptx`
 
@@ -224,7 +224,7 @@ pdftoppm -png -r 300 out.pdf inspect
 pdffonts output.pdf
 ```
 
-If the output shows `DejaVuSerif` / `Bitstream Vera` — your specified font didn't load, fell through to system ultimate fallback. Expected: `Newsreader`, `Charter`, or `TsangerJinKai02`.
+If the output shows `DejaVuSerif` / `Bitstream Vera` - your specified font didn't load, fell through to system ultimate fallback. Expected: `Newsreader`, `Charter`, or `TsangerJinKai02`.
 
 ### One-step build + validate
 
@@ -252,7 +252,7 @@ Every entry below came from a real failure. Check here first when something look
 
 ### 1. Tag / Badge double-rectangle bug (the worst)
 
-**Symptom**: PDFs show two concentric rectangles on tag backgrounds at zoom — an outer softer one and an inner tighter one. Especially visible on mobile PDF viewers.
+**Symptom**: PDFs show two concentric rectangles on tag backgrounds at zoom - an outer softer one and an inner tighter one. Especially visible on mobile PDF viewers.
 
 **Root cause**: WeasyPrint renders `rgba(..., 0.xx)` by compositing the **padding area** and the **glyph pixel area** independently. Glyph anti-aliasing stacks alpha differently, creating the second visible edge.
 
@@ -275,19 +275,19 @@ Every entry below came from a real failure. Check here first when something look
 
 Formula: `solid_channel = base + (foreground - base) × alpha`. Different base colors (e.g. ivory) need re-computing.
 
-**Want "breathing" texture?** Use `linear-gradient` — the whole tag rasterizes as one bitmap, no alpha compositing:
+**Want "breathing" texture?** Use `linear-gradient` - the whole tag rasterizes as one bitmap, no alpha compositing:
 
 ```css
 .tag { background: linear-gradient(to right, #D6E1EE, #E4ECF5 70%, #EEF2F7); }
 ```
 
-**Aesthetic warning**: gradients work engineering-wise but usually oversell the tag. Priority order: lightest solid (`#EEF2F7`) > standard solid (`#E4ECF5`) > gradient (rarely). If the reader's eye lands on the tag background shape before the text inside — you went too far.
+**Aesthetic warning**: gradients work engineering-wise but usually oversell the tag. Priority order: lightest solid (`#EEF2F7`) > standard solid (`#E4ECF5`) > gradient (rarely). If the reader's eye lands on the tag background shape before the text inside - you went too far.
 
 ### 2. Thin border + radius = double circle
 
 **Symptom**: `border: 0.4pt solid ...` + `border-radius: 2pt` shows two parallel arcs on zoom.
 
-**Root cause**: WeasyPrint strokes border inner and outer paths separately when `< 1pt` + rounded corners — at thin widths they can't overlap.
+**Root cause**: WeasyPrint strokes border inner and outer paths separately when `< 1pt` + rounded corners - at thin widths they can't overlap.
 
 **Fix (pick one)**:
 1. Use background fill instead (preferred, design-consistent)
@@ -306,7 +306,7 @@ For resume, one-pager, and other length-capped docs.
 1. Cut redundant qualifiers ("deeply researched" -> "researched")
 2. Merge related data points in the same section
 3. Drop non-essential items whole (not piecemeal)
-4. Reduce section spacing (use sparingly — affects global rhythm)
+4. Reduce section spacing (use sparingly - affects global rhythm)
 5. Last resort: shrink font by 0.1-0.2pt
 
 **Don't**: cut cover / education / timeline structural blocks; cut emphasis (resume becomes flat).
@@ -330,7 +330,7 @@ mkdir -p ~/.fonts && cp *.ttf ~/.fonts/ && fc-cache -f
 
 ### 5. CJK and Latin crowding (Chinese mode only)
 
-**Symptom**: "125.4k GitHub Stars" — k and G feel glued.
+**Symptom**: "125.4k GitHub Stars" - k and G feel glued.
 
 **Wrong fixes**: hand-added `&nbsp;` / `margin-left: 2mm` (misaligns adjacent elements).
 
@@ -352,7 +352,7 @@ mkdir -p ~/.fonts && cp *.ttf ~/.fonts/ && fc-cache -f
 - **Between Latin words**: half-width space + `·` + space
 - **Mixed**: prefer flex gap, don't hand-type spaces
 
-### 7. Thousands / percent / arrows — be consistent
+### 7. Thousands / percent / arrows - be consistent
 
 | ✅ | ❌ |
 |---|---|
@@ -371,7 +371,7 @@ grep -oE '[0-9]{4,}' doc.html | sort -u
 - Four or five ink-blue runs in one line -> visual fatigue, no focal point
 - Entire section with none -> flat, no scan handles
 
-**Rule**: ≤ 2 emphases per line, ≥ 1 per section, only **quantifiable numbers or distinctive phrases** get highlighted — never adjectives.
+**Rule**: ≤ 2 emphases per line, ≥ 1 per section, only **quantifiable numbers or distinctive phrases** get highlighted - never adjectives.
 
 Healthy ratio: one emphasis per 80-150 words.
 

@@ -170,4 +170,4 @@ python3 scripts/build.py
 
 ## 7. 参考
 
-这套能力的灵感来自 Cathryn Lavery 的 [diagram-design](https://github.com/cathrynlavery/diagram-design)（Claude Code skill，13 种编辑风 diagram）。kami 只吸收了它的**做法**（inline SVG、语义 token、复杂度预算、反 AI-slop 表），没有整体移植——13 种会把 kami 撑开，3 种够用于所有 kami 文档场景。
+这套能力的灵感来自 Cathryn Lavery 的 [diagram-design](https://github.com/cathrynlavery/diagram-design)（Claude Code skill，13 种编辑风 diagram）。kami 只吸收了它的**做法**（inline SVG、语义 token、复杂度预算、反 AI-slop 表），没有整体移植--13 种会把 kami 撑开，3 种够用于所有 kami 文档场景。

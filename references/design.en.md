@@ -24,13 +24,13 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 
 ## 1. Color
 
-**Single accent, warm neutrals only, zero cool tones** — this is the core.
+**Single accent, warm neutrals only, zero cool tones** - this is the core.
 
 ### Brand
 
 ```css
---brand:       #1B365D;   /* Ink Blue — the only chromatic color. CTAs, accents, section-title underlines. */
---brand-light: #2D5A8A;   /* Coral — brighter variant, for links on dark surfaces. */
+--brand:       #1B365D;   /* Ink Blue - the only chromatic color. CTAs, accents, section-title underlines. */
+--brand-light: #2D5A8A;   /* Coral - brighter variant, for links on dark surfaces. */
 ```
 
 **Rule**: ink-blue covers ≤ **5% of document surface area**. More than that is ornament, not restraint.
@@ -38,11 +38,11 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Surface
 
 ```css
---parchment:    #f5f4ed;   /* Page background — warm cream, the emotional foundation */
---ivory:        #faf9f5;   /* Card / lifted container — brighter than parchment */
+--parchment:    #f5f4ed;   /* Page background - warm cream, the emotional foundation */
+--ivory:        #faf9f5;   /* Card / lifted container - brighter than parchment */
 --warm-sand:    #e8e6dc;   /* Button default / interactive surface */
---dark-surface: #30302e;   /* Dark-theme container — warm charcoal */
---deep-dark:    #141413;   /* Dark-theme page background — not pure black, slight olive undertone */
+--dark-surface: #30302e;   /* Dark-theme container - warm charcoal */
+--deep-dark:    #141413;   /* Dark-theme page background - not pure black, slight olive undertone */
 ```
 
 **Never**: `#ffffff` pure white as page background. `#f8f9fa` / `#f3f4f6` or any cool-gray surface.
@@ -50,11 +50,11 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Text
 
 ```css
---near-black:  #141413;   /* Primary text — deepest but not pure black, warm olive undertone */
+--near-black:  #141413;   /* Primary text - deepest but not pure black, warm olive undertone */
 --dark-warm:   #3d3d3a;   /* Secondary dark / dark link color */
 --charcoal:    #4d4c48;   /* Button text / dense body */
---olive:       #5e5d59;   /* Subtext — descriptions, captions */
---stone:       #87867f;   /* Tertiary — dates, metadata */
+--olive:       #5e5d59;   /* Subtext - descriptions, captions */
+--stone:       #87867f;   /* Tertiary - dates, metadata */
 --warm-silver: #b0aea5;   /* Light text on dark surfaces */
 ```
 
@@ -63,9 +63,9 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Border
 
 ```css
---border-cream: #f0eee6;   /* Softest border — default cards */
---border-warm:  #e8e6dc;   /* Prominent border — section dividers */
---border-soft:  #efede4;   /* Dotted divider — between list items */
+--border-cream: #f0eee6;   /* Softest border - default cards */
+--border-warm:  #e8e6dc;   /* Prominent border - section dividers */
+--border-soft:  #efede4;   /* Dotted divider - between list items */
 --border-dark:  #30302e;   /* Border on dark surfaces */
 ```
 
@@ -79,8 +79,8 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Functional (use sparingly)
 
 ```css
---error: #b53333;   /* Deep warm red — serious without alarming */
---focus: #3898ec;   /* Focus ring blue — the only cool color, strictly for accessibility */
+--error: #b53333;   /* Deep warm red - serious without alarming */
+--focus: #3898ec;   /* Focus ring blue - the only cool color, strictly for accessibility */
 ```
 
 ### Translucent -> Solid conversion (TAGS MUST BE SOLID)
@@ -104,13 +104,13 @@ Ink Blue `#1B365D` over parchment `#f5f4ed`:
 ### Stacks
 
 ```css
-/* Serif for headlines — Silicon Valley editorial */
-font-family: "Newsreader",             /* Google Fonts — preferred */
+/* Serif for headlines - Silicon Valley editorial */
+font-family: "Newsreader",             /* Google Fonts - preferred */
              "Source Serif 4", "Source Serif Pro",
              "Charter",                /* macOS system font */
              Georgia, "Times New Roman", serif;
 
-/* Sans for body / UI — Silicon Valley default */
+/* Sans for body / UI - Silicon Valley default */
 font-family: "Inter", "TsangerJinKai02",
              -apple-system, BlinkMacSystemFont,
              "Helvetica Neue", Arial, sans-serif;
@@ -160,8 +160,8 @@ Print documents are **tighter** than English web body. English web typically run
 | Label / caption | 1.30-1.40 | Small labels, multi-line metadata |
 
 **Forbidden**:
-- 1.60+ — loose feel, web rhythm, not print
-- 1.00-1.05 — lines collide except at extreme display sizes
+- 1.60+ - loose feel, web rhythm, not print
+- 1.00-1.05 - lines collide except at extreme display sizes
 
 ### Letter-spacing
 
@@ -223,7 +223,7 @@ Radius scale: 4pt -> 6pt -> 8pt (default) -> 12pt -> 16pt -> 24pt -> 32pt (hero 
 ### Buttons
 
 ```css
-/* Primary — brand-colored */
+/* Primary - brand-colored */
 .btn-primary {
   background: var(--brand);
   color: var(--ivory);
@@ -232,7 +232,7 @@ Radius scale: 4pt -> 6pt -> 8pt (default) -> 12pt -> 16pt -> 24pt -> 32pt (hero 
   box-shadow: 0 0 0 1pt var(--brand);   /* ring shadow */
 }
 
-/* Secondary — warm-sand */
+/* Secondary - warm-sand */
 .btn-secondary {
   background: var(--warm-sand);
   color: var(--charcoal);
@@ -270,7 +270,7 @@ Three tiers from weak to strong visual weight:
 }
 ```
 
-**Gradient brush** (only when "hand-painted" feel is required — use sparingly):
+**Gradient brush** (only when "hand-painted" feel is required - use sparingly):
 ```css
 .tag {
   background: linear-gradient(to right, #D6E1EE, #E4ECF5 70%, #EEF2F7);
@@ -280,9 +280,9 @@ Three tiers from weak to strong visual weight:
 }
 ```
 
-**Philosophy**: tint depth should be one step lighter than what decoration wants. Prefer pale over saturated. In iteration, "gradient brush" often steals focus — lightest solid wins most of the time.
+**Philosophy**: tint depth should be one step lighter than what decoration wants. Prefer pale over saturated. In iteration, "gradient brush" often steals focus - lightest solid wins most of the time.
 
-**Never**: `background: rgba(201, 100, 66, 0.18)` — WeasyPrint double-rectangle bug.
+**Never**: `background: rgba(201, 100, 66, 0.18)` - WeasyPrint double-rectangle bug.
 
 ### Lists
 
@@ -294,7 +294,7 @@ ul, ol {
 ul li::marker { color: var(--brand); }
 ```
 
-Editorial bookish variant — **em-dash instead of bullet**:
+Editorial bookish variant - **em-dash instead of bullet**:
 
 ```css
 ul.dash { list-style: none; padding-left: 0; }
@@ -379,7 +379,7 @@ box-shadow: 0 4pt 24pt rgba(0, 0, 0, 0.05);
 
 ### 3. Section-level light/dark alternation
 
-Long docs alternate parchment `#f5f4ed` and `#141413` dark sections. The entire section's ambient light shifts — more dramatic than any shadow.
+Long docs alternate parchment `#f5f4ed` and `#141413` dark sections. The entire section's ambient light shifts - more dramatic than any shadow.
 
 **Forbidden**: `box-shadow: 0 2px 8px rgba(0,0,0,0.3)` and relatives.
 

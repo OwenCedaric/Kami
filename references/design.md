@@ -163,8 +163,8 @@ font-family: "JetBrains Mono", "Fira Code",
 | 标签 / caption | 1.30-1.40 | 小字标签、多行 metadata |
 
 **禁用**：
-- 1.60+ — 英文网页的节奏，中文印刷会显得松散
-- 1.00-1.05 — 除非极致紧凑标题，否则上下文字会粘连
+- 1.60+ - 英文网页的节奏，中文印刷会显得松散
+- 1.00-1.05 - 除非极致紧凑标题，否则上下文字会粘连
 
 ### 字距（letter-spacing）
 
@@ -285,7 +285,7 @@ font-family: "JetBrains Mono", "Fira Code",
 
 **设计哲学**：tint 浓度要比装饰性需求**低一档**。宁可清淡不可浓艳。实战发现"笔刷渐变"虽然技术上酷，但会抢焦点（见 production.md Part 4 #1 的实战经验）。
 
-**绝对不用**：`background: rgba(201, 100, 66, 0.18)` —— 会触发 WeasyPrint 双层 bug。用等效实色替代。
+**绝对不用**：`background: rgba(201, 100, 66, 0.18)` -- 会触发 WeasyPrint 双层 bug。用等效实色替代。
 
 ### 列表
 

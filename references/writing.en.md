@@ -43,24 +43,24 @@ Junior writes "what they did". Mid writes "how they did it". **Senior writes "wh
 
 **Structure**:
 1. **Headline** (serif display) + one-line subtitle (sans body)
-2. **Metrics** — 3-4 cards, numbers first
+2. **Metrics** - 3-4 cards, numbers first
 3. **Core argument** (1-2 paragraphs)
 4. **Key evidence / roadmap** (3-5 short bullets)
 5. **Next step / contact** (footer)
 
 **Rules**:
 - Total: 200-350 words
-- All section headlines should work as a standalone outline — reading just the headlines should deliver the gist
+- All section headlines should work as a standalone outline - reading just the headlines should deliver the gist
 - Data must fill 30%+ of the body
 - No opening ceremony ("In recent years, as technology has rapidly evolved...")
 
 ### Long Document
 
 **Structure**:
-1. **Cover** — big title + subtitle + author + date
+1. **Cover** - big title + subtitle + author + date
 2. **Contents** (auto-generated or hand-written TOC)
 3. **Executive Summary** (≤ 1 page + 3-5 takeaways)
-4. **Body** — chapters that each stand alone as an essay
+4. **Body** - chapters that each stand alone as an essay
 5. **Appendix / references** (if applicable)
 
 **Rules**:
@@ -81,9 +81,9 @@ Junior writes "what they did". Mid writes "how they did it". **Senior writes "wh
 7. Enclosures (if any)
 
 **Rules**:
-- Minimal — no decorative elements
+- Minimal - no decorative elements
 - Body prefers serif (editorial feel)
-- Slightly larger type (11-12pt body) — this will be read, not scanned
+- Slightly larger type (11-12pt body) - this will be read, not scanned
 - Paragraph spacing ≥ 10pt
 
 **Common use cases**:
@@ -109,7 +109,7 @@ Junior writes "what they did". Mid writes "how they did it". **Senior writes "wh
 - Visuals first, text supports
 - Every project's outcome must be quantifiable
 - Photos > design mockups > code screenshots (the more abstract, the better)
-- Don't list every tech stack — a mono tag row is enough
+- Don't list every tech stack - a mono tag row is enough
 
 ### Resume
 
@@ -124,7 +124,7 @@ The most constrained document type in kami.
 **Key sections**:
 - Header + 4 metric cards
 - Summary (~50 words)
-- Timeline (3 steps — long-range evolution signal)
+- Timeline (3 steps - long-range evolution signal)
 - 3-5 core projects
 - Public work / impact (optional)
 - 5 core skills
@@ -158,7 +158,7 @@ Across any document:
 
 ### Emphasis is not bold
 
-Use `color: var(--brand)` alone — don't also add `font-weight: bold`. Bold breaks the single-weight design language.
+Use `color: var(--brand)` alone - don't also add `font-weight: bold`. Bold breaks the single-weight design language.
 
 ---
 
@@ -179,9 +179,9 @@ Run through before every draft:
 
 ## Writing references
 
-- **Paul Graham's essays** — short, direct, judgmental. The gold standard for essayistic writing.
-- **Stripe Press books** — print-grade typography paired with deep content. Where to learn the craft of the single sentence.
-- **Minto's Pyramid Principle** — conclusion first, evidence below. The shape of every one-pager and exec summary.
-- **Ben Horowitz's blog** — how to write technical and business judgment in prose ordinary people can read. The template for long-doc voice.
+- **Paul Graham's essays** - short, direct, judgmental. The gold standard for essayistic writing.
+- **Stripe Press books** - print-grade typography paired with deep content. Where to learn the craft of the single sentence.
+- **Minto's Pyramid Principle** - conclusion first, evidence below. The shape of every one-pager and exec summary.
+- **Ben Horowitz's blog** - how to write technical and business judgment in prose ordinary people can read. The template for long-doc voice.
 
 None are required, but reading any one of them will move the dial on both your writing and your judgment.
