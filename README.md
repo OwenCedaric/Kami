@@ -2,6 +2,7 @@
   <img src="assets/images/logo.svg" width="120" />
   <h1>Kami</h1>
   <p><b>The paper your deliverables land on.</b></p>
+  <p>Generate print-ready resumes, one-pagers, portfolios, slide decks, and more from plain-language prompts. One consistent editorial design system.</p>
   <a href="https://github.com/tw93/kami/stargazers"><img src="https://img.shields.io/github/stars/tw93/kami?style=flat-square" alt="Stars"></a>
   <a href="https://github.com/tw93/kami/releases"><img src="https://img.shields.io/github/v/tag/tw93/kami?label=version&style=flat-square" alt="Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>

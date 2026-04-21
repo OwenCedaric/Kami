@@ -88,7 +88,7 @@
     padding: 5px 10px;
     text-decoration: none;
     color: var(--olive);
-    border: 1px solid var(--border-warm);
+    border: 1px solid var(--border-soft);
     cursor: pointer;
     background: var(--ivory);
     transition: background 0.15s, color 0.15s;
@@ -247,17 +247,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
-    border-top: 1px solid var(--border-warm);
+    border-top: 1px solid var(--border-soft);
   }
   .rules li {
     display: grid;
     grid-template-columns: 36px 1fr;
     gap: 14px;
     padding: 18px 24px 18px 0;
-    border-bottom: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-soft);
     align-items: baseline;
   }
-  .rules li:nth-child(odd) { padding-right: 32px; border-right: 1px solid var(--border-warm); padding-left: 0; }
+  .rules li:nth-child(odd) { padding-right: 32px; border-right: 1px solid var(--border-soft); padding-left: 0; }
   .rules li:nth-child(even) { padding-left: 32px; }
   .rules .n {
     font-family: var(--serif);
@@ -385,14 +385,14 @@
     grid-template-columns: 180px 1fr 160px;
     column-gap: 40px;
     row-gap: 0;
-    border-top: 1px solid var(--border-warm);
+    border-top: 1px solid var(--border-soft);
   }
   .type-row {
     display: contents;
   }
   .type-row > * {
     padding: 22px 0;
-    border-bottom: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-soft);
     align-self: baseline;
   }
   .type-label {
@@ -508,7 +508,7 @@
   .space-table th, .space-table td {
     text-align: left;
     padding: 14px 16px 14px 0;
-    border-bottom: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-soft);
     font-size: 14px;
     color: var(--charcoal);
     vertical-align: middle;
@@ -754,7 +754,7 @@
   }
   .decision th, .decision td {
     padding: 12px 16px 12px 0;
-    border-bottom: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-soft);
     text-align: left;
     vertical-align: top;
   }
