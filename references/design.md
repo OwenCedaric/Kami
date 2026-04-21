@@ -29,7 +29,7 @@ kami 的审美可以浓缩成一句话：**暖米纸底，油墨蓝点缀，seri
 ### 主调 · 品牌色
 
 ```css
---brand:        #1B365D;   /* Ink Blue Brand - 唯一的彩色，用于 CTA、强调、section-title 下划线 */
+--brand:        #1B365D;   /* Ink Blue Brand - 唯一的彩色，用于 CTA、强调、section-title 左侧竖线 */
 --brand-light:  #2D5A8A;   /* Coral Accent - 更亮的变体，偶尔用于深色底上的链接 */
 ```
 
@@ -63,9 +63,9 @@ kami 的审美可以浓缩成一句话：**暖米纸底，油墨蓝点缀，seri
 ### 边框与分隔
 
 ```css
---border-cream: #f0eee6;   /* 最柔的边框 - 卡片默认 */
---border-warm:  #e8e6dc;   /* 明显的边框 - section 分隔 */
---border-soft:  #efede4;   /* 更淡的虚线分隔 - 列表项之间 */
+--border-cream: #e8e5da;   /* 最柔的边框 - 卡片默认 */
+--border-warm:  #e0ddd2;   /* 明显的边框 - section 分隔 */
+--border-soft:  #e5e3d8;   /* 更淡的虚线分隔 - 列表项之间 */
 --border-dark:  #30302e;   /* 深色主题下的边框 */
 ```
 
@@ -344,6 +344,9 @@ ul.dash li::before {
   font-weight: 500;
   color: var(--near-black);
   margin: 24pt 0 10pt 0;
+  border-left: 2.5pt solid var(--brand);
+  border-radius: 1.5pt;
+  padding-left: 8pt;
 }
 ```
 
@@ -453,12 +456,12 @@ figure,
 | 大标题 | serif 500，字号根据层级，line-height 1.10-1.30 |
 | 正文阅读 | sans 400，9.5-10 pt，line-height 1.55 |
 | 强调一个数字 | `color: var(--brand)`，不要粗体 |
-| 分隔两段内容 | 1pt 品牌色 border-bottom，或 0.5pt 暖灰虚线 |
+| 分隔两段内容 | 2.5pt 品牌色左侧竖线，或 0.5pt 暖灰虚线 |
 | 引用某人的话 | 左 2pt 品牌色实线 + olive 色 |
 | 展示代码 | ivory 底 + 0.5pt border + 6pt 圆角 + mono 字体 |
 | 区分主次按钮 | Primary 用品牌色填充 + 白字，Secondary 用 warm-sand + charcoal |
 | 在卡片列表里区分某张特殊的 | `border: 0.5pt solid var(--brand)` 或 `border-left: 3pt solid var(--brand)` |
-| 章节开始 | serif 标题 + 下面一条 1pt 品牌色实线 |
+| 章节开始 | serif 标题 + 左侧 2.5pt 品牌色竖线 |
 | 文档封面 | 单页 Display 字号标题 + 作者/日期 right align，中间大量留白 |
 | 一张数据卡 | ivory 底 + 8 pt 圆角 + serif 大数字 + sans 小标签 |
 

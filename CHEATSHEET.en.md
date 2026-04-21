@@ -22,7 +22,7 @@ One-page quick reference. Scan before filling a template or tweaking a detail. F
 | Warm Sand | `#e8e6dc` | Button / interactive surface |
 | Dark Surface | `#30302e` | Dark container |
 | Deep Dark | `#141413` | Dark page background |
-| **Brand** | **`#1B365D`** | **Accent · CTA · title underline (≤ 5% of surface)** |
+| **Brand** | **`#1B365D`** | **Accent · CTA · title left bar (≤ 5% of surface)** |
 | Brand Coral | `#2D5A8A` | Links on dark surfaces |
 | Near Black | `#141413` | Primary text |
 | Dark Warm | `#3d3d3a` | Secondary dark / link |
@@ -30,7 +30,7 @@ One-page quick reference. Scan before filling a template or tweaking a detail. F
 | Olive | `#5e5d59` | Subtext · descriptions |
 | Stone | `#87867f` | Tertiary · metadata |
 | Warm Silver | `#b0aea5` | Light text on dark surfaces |
-| Border Cream | `#f0eee6` | Default card border |
+| Border Cream | `#e8e5da` | Default card border |
 | Border Warm | `#e8e6dc` | Section divider |
 | Ring Warm | `#d1cfc5` | Button hover / focus ring |
 
@@ -125,7 +125,7 @@ Screen (px) ≈ pt × 1.33.
 }
 ```
 
-### Section title (brand underline is the signature move)
+### Section title (brand left bar is the signature move)
 
 ```css
 .section-title {
@@ -133,6 +133,9 @@ Screen (px) ≈ pt × 1.33.
   font-size: 14pt; font-weight: 500;
   color: var(--near-black);
   margin: 24pt 0 10pt 0;
+  border-left: 2.5pt solid var(--brand);
+  border-radius: 1.5pt;
+  padding-left: 8pt;
 }
 ```
 
@@ -167,12 +170,12 @@ Screen (px) ≈ pt × 1.33.
 | Reading body (EN) | serif 400, 9.5-10pt, 1.55 |
 | Reading body (CN) | sans 400, 9.5-10pt, 1.55 |
 | Emphasize a number | `color: var(--brand)`, no bold |
-| Divide two sections | 1pt brand border-bottom, or 0.5pt warm dotted |
+| Divide two sections | 2.5pt brand left bar, or 0.5pt warm dotted |
 | Quote | 2pt brand left border + olive color |
 | Code | ivory bg + 0.5pt border + 6pt radius + mono |
 | Primary button | brand fill + ivory text |
 | Secondary button | warm-sand + charcoal |
-| Chapter start | serif heading + 1pt brand line below |
+| Chapter start | serif heading + 2.5pt brand left bar |
 | Cover | Display heading + right-aligned author/date + heavy whitespace |
 
 Not on the table -> first principles: **serif carries authority, sans carries utility, warm gray carries rhythm, ink-blue carries focus**.

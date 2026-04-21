@@ -29,7 +29,7 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Brand
 
 ```css
---brand:       #1B365D;   /* Ink Blue - the only chromatic color. CTAs, accents, section-title underlines. */
+--brand:       #1B365D;   /* Ink Blue - the only chromatic color. CTAs, accents, section-title left bar. */
 --brand-light: #2D5A8A;   /* Coral - brighter variant, for links on dark surfaces. */
 ```
 
@@ -63,9 +63,9 @@ This system is a fusion of Anthropic's visual language and real Chinese / Englis
 ### Border
 
 ```css
---border-cream: #f0eee6;   /* Softest border - default cards */
---border-warm:  #e8e6dc;   /* Prominent border - section dividers */
---border-soft:  #efede4;   /* Dotted divider - between list items */
+--border-cream: #e8e5da;   /* Softest border - default cards */
+--border-warm:  #e0ddd2;   /* Prominent border - section dividers */
+--border-soft:  #e5e3d8;   /* Dotted divider - between list items */
 --border-dark:  #30302e;   /* Border on dark surfaces */
 ```
 
@@ -338,6 +338,9 @@ ul.dash li::before {
   font-weight: 500;
   color: var(--near-black);
   margin: 24pt 0 10pt 0;
+  border-left: 2.5pt solid var(--brand);
+  border-radius: 1.5pt;
+  padding-left: 8pt;
 }
 ```
 
@@ -423,12 +426,12 @@ When you're not sure "what should I use":
 | Reading body (EN) | serif 400, 9.5-10pt, line-height 1.55 |
 | Reading body (CN) | sans 400, 9.5-10pt, line-height 1.55 |
 | Emphasize a number | `color: var(--brand)`, no bold |
-| Divide two sections | 1pt brand border-bottom, or 0.5pt warm-gray dotted |
+| Divide two sections | 2.5pt brand left bar, or 0.5pt warm-gray dotted |
 | Quote someone | 2pt brand left border + olive color |
 | Show code | ivory background + 0.5pt border + 6pt radius + mono |
 | Primary vs secondary button | Primary = brand fill + ivory text; Secondary = warm-sand + charcoal |
 | Highlight one card in a list | `border: 0.5pt solid var(--brand)` or `border-left: 3pt solid var(--brand)` |
-| Start a chapter | serif heading + 1pt brand line below |
+| Start a chapter | serif heading + 2.5pt brand left bar |
 | Cover page | Display-size heading + right-aligned author/date + heavy whitespace |
 | Data card | ivory background + 8pt radius + serif big number + sans small label |
 

@@ -22,7 +22,7 @@
 | Warm Sand | `#e8e6dc` | 按钮背景 / 交互面 |
 | Dark Surface | `#30302e` | 深色容器 |
 | Deep Dark | `#141413` | 深色页面底 |
-| **Brand** | **`#1B365D`** | **强调 · CTA · 标题下划线（全文 ≤ 5%）** |
+| **Brand** | **`#1B365D`** | **强调 · CTA · 标题左侧竖线（全文 ≤ 5%）** |
 | Brand Coral | `#2D5A8A` | 深底上的链接 |
 | Near Black | `#141413` | 主文字 |
 | Dark Warm | `#3d3d3a` | 次级深色 / 链接 |
@@ -30,7 +30,7 @@
 | Olive | `#5e5d59` | 副文本 · 描述 |
 | Stone | `#87867f` | 三级文字 · 元信息 |
 | Warm Silver | `#b0aea5` | 深底上的浅色文字 |
-| Border Cream | `#f0eee6` | 卡片默认边 |
+| Border Cream | `#e8e5da` | 卡片默认边 |
 | Border Warm | `#e8e6dc` | section 分隔 |
 | Ring Warm | `#d1cfc5` | 按钮 hover / focus 环 |
 
@@ -113,7 +113,7 @@
 }
 ```
 
-### Section Title（品牌色下划线是签名式样）
+### Section Title（品牌色左侧竖线是签名式样）
 
 ```css
 .section-title {
@@ -121,6 +121,9 @@
   font-size: 14pt; font-weight: 500;
   color: var(--near-black);
   margin: 24pt 0 10pt 0;
+  border-left: 2.5pt solid var(--brand);
+  border-radius: 1.5pt;
+  padding-left: 8pt;
 }
 ```
 
@@ -155,12 +158,12 @@
 | 正文阅读（英文） | serif 400，9.5-10pt，1.55 |
 | 正文阅读（中文） | sans 400，9.5-10pt，1.55 |
 | 强调数字 | `color: var(--brand)`，不加粗 |
-| 分两段 | 1pt 品牌色 border-bottom，或 0.5pt 暖灰虚线 |
+| 分两段 | 2.5pt 品牌色左侧竖线，或 0.5pt 暖灰虚线 |
 | 引用 | 左 2pt 品牌实线 + olive 色 |
 | 代码 | ivory 底 + 0.5pt border + 6pt 圆角 + mono |
 | 主按钮 | 品牌色填充 + ivory 字 |
 | 次按钮 | warm-sand 底 + charcoal 字 |
-| 章节开始 | serif 标题 + 下方 1pt 品牌色实线 |
+| 章节开始 | serif 标题 + 左侧 2.5pt 品牌色竖线 |
 | 封面 | 单页 Display 标题 + 右对齐作者/日期 + 大量留白 |
 
 不在表里 -> 回原则：**serif 承担权威，sans 承担功能，暖灰承担节奏，油墨蓝承担焦点**。
