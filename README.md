@@ -6,8 +6,6 @@
   <a href="https://github.com/tw93/kami/releases"><img src="https://img.shields.io/github/v/tag/tw93/kami?label=version&style=flat-square" alt="Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
   <a href="https://twitter.com/HiTw93"><img src="https://img.shields.io/badge/follow-Tw93-red?style=flat-square&logo=Twitter" alt="Twitter"></a>
-  <br/><br/>
-  <a href="https://kami.tw93.fun">Design Spec</a> · <a href="https://kami.tw93.fun/index-en.html">English</a>
 </div>
 
 <br/>
@@ -18,7 +16,7 @@ Kami (紙, かみ) is the Japanese word for paper: the quiet surface on which a 
 
 Most document design drifts into two failure modes: generic corporate gray, or SaaS hype gradients. Neither reads like something a person actually made with care.
 
-Kami holds one design idea across every format: warm parchment canvas, a single ink-blue accent, serif for authority, sans for utility, editorial whitespace tuned for print. Inspired by Anthropic's visual language.
+Kami holds one design idea across every format: warm parchment canvas, a single ink-blue accent, serif for authority, sans for utility, editorial whitespace tuned for print.
 
 It is part of the `Kaku · Waza · Kami` trilogy: Kaku (書く) is how you write code, Waza (技) is the habits you practice, Kami (紙) is the paper your work ships on.
 

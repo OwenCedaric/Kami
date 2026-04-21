@@ -150,7 +150,7 @@
     align-items: end;
     gap: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid var(--brand);
+    border-bottom: 1px solid var(--border-warm);
     margin-bottom: 64px;
   }
   .eyebrow {
@@ -813,7 +813,6 @@
 
   /* Background text */
   .background-text {
-    max-width: 720px;
     font-size: 14px;
     line-height: 1.65;
     color: var(--dark-warm);
